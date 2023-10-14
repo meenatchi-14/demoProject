@@ -1,7 +1,7 @@
 const studentList=document.querySelector("#student-list");
 const studentForm=document.querySelector("#student-form");
 let editId;
-const API="https://6523739cf43b179384156d73.mockapi.io/Student";
+const API="https://652ab6634791d884f1fd4339.mockapi.io/Student";
 // create form
 studentForm.innerHTML +=`
 <form class="form-data">
