@@ -1,0 +1,77 @@
+.main{
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(230, 163, 40) ;
+    display: flex;
+    flex-direction: column;
+     padding: 12px;
+   max-width: 13rem;
+   border-radius: 1rem;
+   overflow: hidden;
+    /* border: 2px solid rgb(76, 58, 25); */
+ box-shadow: 3px 3px 10px 0px black;
+}
+#student-list{
+    justify-content: center;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+}
+.span-h{
+
+    font-size:larger;
+    font-weight: bolder;
+}
+.btn{
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  cursor:pointer;
+  font-weight: bold;
+  font-size:medium;
+}
+#del-btn:hover{
+    background-color: rgb(219, 88, 202);
+}
+#edit-btn:hover{
+    background-color: rgb(219, 88, 202);
+}
+#update-btn:hover{
+    background-color: rgb(219, 88, 202);
+}
+#add-btn:hover{
+    background-color: #3061f5;
+}
+.input-text{
+    border-radius: 5px;
+    
+    width: 50%;
+    font-size: 18px;
+   padding: 12px;
+   border: none;
+   background-color: #c6eeb1;
+}
+.form-data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 17px;
+    border: 2px solid rgb(88, 236, 8);
+    padding: 15px;
+    border-radius: 5px;
+}
+#edit-btn, #update-btn{
+    background-color: yellow;
+}
+#add-btn{
+    background-color:hwb(123 6% 47% / 0.967) ;
+}
+#del-btn{
+    background-color:hsl(6, 95%, 48%) ;
+}
+.head{
+    color:#176d17 ;
+    font-weight: bold;
+}
