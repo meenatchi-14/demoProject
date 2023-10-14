@@ -3,124 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>callBack Hell</title>
-    <style>
-        * {
-            padding: none;
-            margin: none;
-            box-sizing: border-box;
-        }
- 
-        .number {
-            color: #f52c0d;
-            font-size: 2rem;
-            /* transition: all .5s ease-in; */
-            margin: 0 5px;
-            transform: translateY(3.8rem);
-            opacity: 0;
-        }
- 
-        body {
-            margin: 10px;
-            border: 2px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width:600px;
-            height:600px;
-        }
- 
-        .container {
-            text-align: center;
-            background: radial-gradient(circle,rgb(204, 204, 58),rgb(65, 219, 65));
-            overflow: hidden;
-            display: flex;
-            flex-direction: row;
-        }
-        .btn{
-            align-items: center;
-            border: none;
-            background-color: black;
-            color: white;
-            margin: 10px;     
-            padding: 10px;
-            border-radius: 10px;
-        }
-        .btn:hover{
-            cursor: pointer;
-            background-color: red;
-            }
- 
-        .animate {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
- 
 <body>
-    <div class="container">
-     <div><h2 class="number">10</h2><br>
-        <h2 class="number">9</h2><br>
-        <h2 class="number">8</h2><br>
-        <h2 class="number">7</h2><br>
-        <h2 class="number">6</h2><br>
-        <h2 class="number">5</h2><br>
-        <h2 class="number">4</h2><br>
-        <h2 class="number">3</h2><br>
-        <h2 class="number">2</h2><br>
-        <h2 class="number">1</h2><br> 
-        <h2 class="number">Happy Independence Day</h2></div>
-    </div>
-    <button class="btn">callBack hell </button>
+    <div id="student-form"></div>
+    <div id="student-list"></div>
+    
+    <script src="script.js"></script>
 </body>
-<script>
-    let num = document.querySelectorAll(".number");
-    const button=document.querySelector(".btn");
-    button.addEventListener("click", (e)=> {
-    const animateAll = (animate) => {
-        setTimeout(() => {
-            animate(num[0]);
-            setTimeout(() => {
-                animate(num[1]);
-                setTimeout(() => {
-                    animate(num[2]);
-                    setTimeout(() => {
-                        animate(num[3]);
-                        setTimeout(() => {
-                            animate(num[4]);
-                            setTimeout(() => {
-                                  animate(num[5]);
-                                  setTimeout(() => {
-                                      animate(num[6]);
-                                      setTimeout(() => {
-                                        animate(num[7]);
-                                        setTimeout(() => {
-                                           animate(num[8])
-                                           setTimeout(() => {
-                                              animate(num[9]);
-                                               setTimeout(() => {
-                                                  animate(num[10]);
-                                                  setTimeout(() => {
-                                                      animate(num[11]);
-                                                     }, 1000)
-                                                 }, 1000)
-                                             }, 1000)
-                                        }, 1000)
-                                    }, 1000)
-                                 }, 1000)
-                            }, 1000)
-                        }, 1000)
-                   }, 1000)
-                }, 1000)
-            }, 1000)
-        }, 1000)
-    }
-    const animate = (number) => {
-        number.classList.add("animate");
-    }
- 
-    animateAll(animate);
-})
-</script>
 </html>
